@@ -1,34 +1,17 @@
 @import "./styleguide.css";
 
+/* ! ****************** HEAD *****************************/
+
 .header {
-  background: rgb(255, 255, 255);
-  font-family: "Sofia Pro";
   font-size: 12px;
   line-height: 1;
-}
-
-.container {
-  padding-inline: 136px;
-  max-inline-size: 1440px;
-}
-
-.wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.base-header{
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-}
-
-.line {
-  inline-size: 100%;
-  block-size: 3px;
   box-shadow: 0px 1px 10px 0px rgba(246, 80, 80, 0.15);
+}
+
+.base-header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
 }
 
 .weather {
@@ -42,7 +25,7 @@
 .news-title {
   margin-inline-end: 14px;
   padding: 15px 7px;
-  max-inline-size: 94px;
+  max-inline-size: 96px;
   color: var(--main-white);
   background-color: var(--main-red);
 }
@@ -101,8 +84,10 @@
   transform: translate(4px, 4px);
 }
 
-.info-panel{
-  margin-block-start: 26px;
+/* ! ****************** INFO *****************************/
+
+.info-panel {
+  margin-block: 25px;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -125,7 +110,6 @@
 }
 
 .white-text {
-  font-family: "Sofia Pro";
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
@@ -140,6 +124,7 @@
 .red-text {
   color: var(--main-red);
   font-family: "Oswald";
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -158,7 +143,90 @@
   transition: color 350ms linear, background-color 300ms linear;
 }
 
-.btn-banner:hover{
+.btn-banner:hover {
   color: var(--main-red);
   background-color: var(--main-white);
+}
+
+/* ! ****************** MENU *****************************/
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  background: var(--main-gray);
+}
+
+.menu-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.menu-item {
+  padding-block: 15px;
+  padding-inline: 12.5px;
+}
+
+.menu-item h2 {
+  color: var(--main-white);
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.search {
+  background: var(--main-gray);
+  border: none;
+}
+
+.search-input {
+  padding-inline-start: 16px;
+  outline: none;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.3);
+  color: var(--main-white);
+  caret-color: var(--main-white);
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.search-btn {
+  padding-inline-end: 24px;
+}
+
+.search-icon {
+  inline-size: 12px;
+  block-size: 12px;
+}
+
+.levels {
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-chevron {
+  fill: var(--main-white);
+  inline-size: 24px;
+  block-size: 24px;
+  transform: translateY(3px);
+}
+
+.levels-list{
+  display: none;
+}
+
+.levels-list h2 {
+  color: var(--main-gray);
+}
+
+.levels:hover .levels-list {
+  display: block;
+  position: absolute;
+  top: 55px;
 }

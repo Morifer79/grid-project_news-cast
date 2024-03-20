@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('./fonts/SofiaProRegular.woff'), url('./fonts/SofiaProRegular.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('./fonts/SofiaProRegular.woff2'), url('./fonts/SofiaProRegular.woff2') format('woff2');
+  }
+
 :root {
   --main-gray: #393939;
   --main-red: #F65050;
@@ -30,7 +44,8 @@
 html,
 body {
   color: var(--main-gray);
-  background-color: var(--main-white);
+  background-color: var(--main-bg);
+  font-family: 'Sofia Pro';
   font-weight: 400;
 }
 
@@ -55,9 +70,14 @@ button {
   cursor: pointer;
 }
 
-@font-face {
-  font-family: 'Sofia Pro Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
-  }
+.container {
+  padding-inline: 136px;
+  max-inline-size: 1440px;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
