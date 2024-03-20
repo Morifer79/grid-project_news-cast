@@ -1,0 +1,63 @@
+:root {
+  --main-gray: #393939;
+  --main-red: #F65050;
+  --main-white: #FFFFFF;
+
+  --red: #FE4A51;
+  --text-black: rgba(57, 57, 57, 0.6);
+  --violet: #A56CBD;
+  --green: #2ECC71;
+  --blue: #0088FF;
+  --nut: #997C00;
+  --light-blue: #49CFE8;
+  --dark-blue: #4C60F5;
+  --pink: #FFB8B8;
+
+  --tile-facebook: #4281FF;
+  --tile-youtube: #EF5043;
+  --tile-behance: #1B7BFD;
+  --tile-instagram: #C23785;
+  --tile-twitter: #42C0F5;
+  --tile-dribble: #F7679D;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--main-gray);
+  background-color: var(--main-white);
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
+  }

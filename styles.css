@@ -1,0 +1,164 @@
+@import "./styleguide.css";
+
+.header {
+  background: rgb(255, 255, 255);
+  font-family: "Sofia Pro";
+  font-size: 12px;
+  line-height: 1;
+}
+
+.container {
+  padding-inline: 136px;
+  max-inline-size: 1440px;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.base-header{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.line {
+  inline-size: 100%;
+  block-size: 3px;
+  box-shadow: 0px 1px 10px 0px rgba(246, 80, 80, 0.15);
+}
+
+.weather {
+  margin-inline-end: 16px;
+}
+
+.weather span {
+  margin-inline: 7px 14px;
+}
+
+.news-title {
+  margin-inline-end: 14px;
+  padding: 15px 7px;
+  max-inline-size: 94px;
+  color: var(--main-white);
+  background-color: var(--main-red);
+}
+
+.icon {
+  inline-size: 16px;
+  block-size: 16px;
+  transform: translateY(3px);
+}
+
+.date > .icon,
+.date {
+  margin-inline-end: 14px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-item {
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.social-item:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  background-color: var(--tile-behance);
+}
+
+.twitter {
+  background-color: var(--tile-twitter);
+}
+
+.instagram {
+  background-color: var(--tile-instagram);
+}
+
+.youtube {
+  background-color: var(--tile-youtube);
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-img {
+  fill: var(--main-white);
+  inline-size: 16px;
+  block-size: 16px;
+  transform: translate(4px, 4px);
+}
+
+.info-panel{
+  margin-block-start: 26px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.logo {
+  max-inline-size: 247px;
+  block-size: 62px;
+}
+
+.banner {
+  padding: 16px 26px 12px;
+  max-inline-size: 771px;
+  background: center / cover no-repeat url("img/banner.jpg");
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white-text {
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--main-white);
+}
+
+.white-text span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.red-text {
+  color: var(--main-red);
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-banner {
+  max-block-size: 44px;
+  padding: 13px 20px;
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Sofia Pro";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: color 350ms linear, background-color 300ms linear;
+}
+
+.btn-banner:hover{
+  color: var(--main-red);
+  background-color: var(--main-white);
+}
