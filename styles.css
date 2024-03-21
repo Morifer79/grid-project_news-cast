@@ -236,10 +236,7 @@
 
 .hero {
   padding-block: 25px 50px;
-  /* padding-inline: 135px; */
   color: var(--main-white);
-  /* max-inline-size: 1440px; */
-  /* margin: 0 auto; */
 }
 
 .side-wrapper {
@@ -299,28 +296,236 @@
   background: var(--light-blue);
 }
 
-.sup-text{
+.sup-text {
   font-size: 10px;
   line-height: 1;
 }
 
-.sup-text.big{
+.sup-text.big {
   font-size: 12px;
 }
 
 .title {
-font-family: 'Oswald';
-font-size: 14px;
-font-weight: 500;
-line-height: 1.5;
-text-transform: capitalize;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
 }
 
-.title.mid  {
+.title.sm {
+  max-inline-size: 165px;
+}
+
+.title.mid {
   font-size: 24px;
+  max-inline-size: 295px;
 }
 
-.title.big  {
+.title.big {
   font-size: 36px;
   line-height: 1.47;
+  max-inline-size: 477px;
+}
+
+/* ! ****************** ARTICLE BLOCK *****************************/
+
+.grid-box {
+  display: grid;
+  grid-template: 1fr / 75% 25%;
+  gap: 30px;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.article-header {
+  margin-block-end: 24px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-name {
+  color: var(--main-red);
+  font-family: "Oswald";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.article-name-list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+}
+
+.article-name-list li span {
+  padding-inline: 8px;
+
+  color: var(--main-white);
+  font-family: "Oswald";
+  font-size: 12px;
+  line-height: 1.333;
+}
+
+.article-name-list li:nth-child(1) span {
+  background: var(--red);
+}
+.article-name-list li:nth-child(2) span {
+  background: var(--violet);
+}
+.article-name-list li:nth-child(3) span {
+  background: var(--green);
+}
+.article-name-list li:nth-child(4) span {
+  background: var(--blue);
+}
+.article-name-list li:nth-child(5) span {
+  background: var(--nut);
+}
+.article-name-list li:nth-child(6) span {
+  background: var(--light-blue);
+}
+.article-name-list li:nth-child(7) span {
+  background: var(--blue);
+}
+.article-name-list li:nth-child(8) span {
+  background: var(--dark-blue);
+}
+
+.border-line {
+  position: relative;
+}
+
+.border-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  inline-size: 140px;
+  block-size: 1px;
+  background-color: var(--main-red);
+}
+
+.border-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+  right: 0;
+  block-size: 1px;
+  background-color: var(--main-gray);
+}
+
+.article-box {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
+.big-img {
+  margin-block-end: 25px;
+  inline-size: 393px;
+  block-size: 250px;
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb > span {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  background: var(--violet);
+  color: var(--main-white);
+}
+
+.article-block{
+  max-inline-size: 394px;
+}
+
+.accent{
+  color: var(--text-black);
+}
+
+title.imp{
+  max-inline-size: 394px;
+}
+
+.article-block > h2 {
+  margin-block: 6px;
+}
+
+.article-block > p {
+  max-inline-size: 370px;
+  color: var(--text-black);
+  font-size: 14px;
+  font-weight: 250;
+}
+
+.article-list {
+  display: grid;
+  gap: 16px;
+}
+
+.article-list li {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 19px;
+}
+
+.article-list li img {
+  inline-size: 90px;
+  block-size: 70px;
+}
+
+.article-side-box .border-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  inline-size: 72px;
+  block-size: 1px;
+  background-color: var(--main-red);
+}
+
+.article-side-box .border-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 72px;
+  right: 0;
+  block-size: 1px;
+  background-color: var(--main-gray);
+}
+
+.article-side-box .article-name{
+  color: var(--main-gray);
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.article-side-list {
+  display: grid;
+  gap: 17px;
+}
+
+.article-side-list h2 {
+  max-inline-size: 139px;
+}
+
+.article-side-list li {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 12px;
+}
+
+.article-side-list img {
+  inline-size: 70px;
+  block-size: 70px;
 }
